@@ -1,0 +1,47 @@
+#folders
+libzmq/
+
+zmqclient/zmqclient/Debug/
+zmqclient/Debug/
+zmqclient/.vs/
+
+zmqserver/zmqserver/Debug/
+zmqserver/Debug/
+zmqserver/.vs/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.db
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.bin
+
+# others files 
+*.log
+*.sdf
+*.opendb
+

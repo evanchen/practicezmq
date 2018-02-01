@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\github\practicezmq\zeromq\libzmq\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\github\practicezmq\zeromq\libzmq\bin\Win32\Debug\v140\dynamic;$(LibraryPath)</LibraryPath>
+    <IncludePath>../../libzmq/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>D:\github\practicezmq\zeromq\libzmq\include;$(IncludePath)</IncludePath>
@@ -122,6 +122,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="zmq_engine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="constdef.h" />
+    <ClInclude Include="zmq_engine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

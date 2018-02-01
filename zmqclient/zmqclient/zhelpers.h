@@ -136,7 +136,7 @@ static void
 s_set_id(void *socket, intptr_t id)
 {
     char identity [10];
-    sprintf_s(identity, "%04X", (int)id);
+    sprintf_s(identity, sizeof identity,"%04X", (int)id);
     zmq_setsockopt(socket, ZMQ_IDENTITY, identity, strlen(identity));
 }
 #endif
