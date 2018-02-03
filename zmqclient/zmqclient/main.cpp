@@ -13,9 +13,11 @@ int main(void)
 	auto zEngine = ZmqEngine::getInstance();
 	zEngine->init(GAME_ENGINE);
 
+	char data[] = "just a test";
 	while (1) {
 		zEngine->update();
-		Sleep(1000);
+		Sleep(100);
+		zEngine->sync(11, 1001, data, sizeof(data));
 	}
 	return 0;
 }
